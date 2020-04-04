@@ -1,6 +1,7 @@
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
+
 import java.io.*;
 import java.util.List;
 //import java.io.IOException;
@@ -14,12 +15,12 @@ public class Main {
         String inputFilePath = "", outputFilePath = "";
 
         Scanner reader = new Scanner(System.in);
-        System.out.println("Enter file path: ");
-        inputFilePath = reader.nextLine();
+        System.out.print("Enter file Name: ");
+        inputFilePath = "testcases/" + reader.nextLine().split("/")[0] + ".cl";
 
         outputFilePath = inputFilePath.substring(inputFilePath.indexOf("/") + 1);
         outputFilePath = outputFilePath.substring(0, outputFilePath.indexOf("."));
-        outputFilePath = "output/"+outputFilePath;
+        outputFilePath = "output/" + outputFilePath;
 
         CharStream input = CharStreams.fromFileName(inputFilePath);
         Cool_lexer lexer = new Cool_lexer(input);
@@ -29,20 +30,19 @@ public class Main {
         List<Token> allTokens = tokens.getTokens();
 
         //to detect if there is an error in lexems
-        Boolean err = false ;
-        for (int i = 0 ; i < allTokens.size() ; i++){
+        Boolean err = false;
+        for (int i = 0; i < allTokens.size(); i++) {
             if (allTokens.get(i).getType() == 52) {
-                err = true ;
-                System.out.print("\n"+"Symbol "
-                        +allTokens.get(i).getText()
-                        + " isn't allowed in line "
-                        +allTokens.get(i).getLine()
-                        );
+                err = true;
+                System.out.print("\n" + "ERROR: ");
+                System.out.printf("%3d: ", allTokens.get(i).getLine());
+                System.out.print("lexer: invalid character: "
+                        + allTokens.get(i).getText());
             }
         }
-        if(!err){
-            System.out.println("\n"+"The file passes lexer test.");
-            writeLexerOutput(outputFilePath+".cl-lex",allTokens, allTokens.size());
+        if (!err) {
+            System.out.println("\n" + "The file passes lexer test.");
+            writeLexerOutput(outputFilePath + ".cl-lex", allTokens, allTokens.size());
         }
 
 
@@ -52,23 +52,24 @@ public class Main {
         File file = new File(fileName);
         FileWriter fr = null;
         BufferedWriter br = null;
-        String dataWithNewLine="" ;
-        try{
+        String dataWithNewLine = "";
+        try {
             fr = new FileWriter(file);
             br = new BufferedWriter(fr);
-            for(int i = noOfLines; i>0; i--){
-                dataWithNewLine+=
-                        "Line : " + tokens.get(noOfLines-i).getLine() +
-                                ", Type : " + tokens.get(noOfLines-i).getType() +
-                                ", Value : " + tokens.get(noOfLines-i).getText() ;
+            for (int i = noOfLines; i > 0; i--) {
+                dataWithNewLine +=
+                        tokens.get(noOfLines - i).getLine() +
+                                "\n" + Cool_lexer.getTokenName(tokens.get(noOfLines - i).getType());
+                if (tokens.get(noOfLines - i).getType() >= 20 && tokens.get(noOfLines - i).getType() <= 23)
+                    dataWithNewLine += "\n" + tokens.get(noOfLines - i).getText();
                 br.write(dataWithNewLine);
                 br.newLine();
-                dataWithNewLine = "" ;
+                dataWithNewLine = "";
             }
             System.out.println("Writing tokens file is done");
         } catch (IOException e) {
             e.printStackTrace();
-        }finally{
+        } finally {
             try {
                 br.close();
                 fr.close();
