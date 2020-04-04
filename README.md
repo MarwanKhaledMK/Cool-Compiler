@@ -1,8 +1,8 @@
-# COOL Compiler
+# COOL_Interpreter
 ## Compiler's project overview:
 
-- This project will direct you to design and build an interpreter for Cool. Each phase will cover one component of the interpreter:    lexical analysis, parsing, and code generation in three address code. Each phase will ultimately result in a working compiler phase which can interface with the other phases.
-- **We are now in the First Phase which is _The Lexer_.**
+This project will direct you to design and build an interpreter for Cool. Each phase will cover one component of the interpreter:    lexical analysis, parsing, and code generation in three address code. Each phase will ultimately result in a working compiler phase which can interface with the other phases.
+
 ## Prerequisites
 - Worked on [IntelliJ IDEA Community Edition 2019.3.3](https://confluence.jetbrains.com/display/IDEADEV/IDEA+2019.3+latest+builds)
 - [java JDK 13.0.1](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)
@@ -14,12 +14,12 @@
 - Install [java JDK 13.0.1](https://www.youtube.com/watch?v=jAXmmAr9KzU)
 - Install [ANTLRV4 Plug-in Version 4.8 on IntelliJ](https://blog.dgunia.de/2017/10/26/creating-and-testing-an-antlr-parser-with-intellij-idea-or-android-studio/)
 - Import [antlr-4.8-complete.jar](https://www.youtube.com/watch?v=rCFMKUtN7rM)
+- set gen folder as source root
 
-### Setup
- Setup: 
-    ![alt text](https://github.com/MarwanKhaledMK/Cool-Lexer/blob/master/testcases/setup.png "setup")
-        
-Now the project is ready to be lunched 😉
+    -how to set gen folder as source root: 
+    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/source%20root.png "source root")
+
+#### Now the project is ready to be lunched 😉
 
 ## How to run ?
 - The Program's Main Class is found in gen folder and it's running from there
@@ -44,15 +44,14 @@ If the lexical analyzer finds a token invalid, it generates an error. The lexica
 
 2) Test cases good.cl and bad.cl. The first lex correctly and yield a sequence of tokens. The second contain an error.
     - good.cl contain program that calculate factorial
-        - good.cl code: 
-        ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl.png "Input : good.cl code")
-
-        - good.cl-lex tokens: 
-        ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl-lex.png "Output : good.cl-lex")
-        
+     good.cl code: 
+    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl.png "Input : good.cl code")
+    
+    - good.cl-lex tokens: 
+    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl-lex.png "Output : good.cl-lex")
     - bad.cl is corrupted syntax program contain random symbols
-        - bad.cl code: 
-        ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/bad.cl.png "Input & Output : bad.cl code")
+    bad.cl code: 
+    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/bad.cl.png "Input & Output : bad.cl code")
 
 ## Contributers:
 - Marwan Khaled Zenhom 
@@ -61,4 +60,3 @@ If the lexical analyzer finds a token invalid, it generates an error. The lexica
 - Mohamed Hassan Mohamed 
 - Rana Ebrahim Mohamed 
 - Andrew Anter 
-
