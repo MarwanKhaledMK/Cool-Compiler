@@ -1,69 +1,159 @@
-Line : 1, Type : 2, Value : class
-Line : 1, Type : 22, Value : Main
-Line : 1, Type : 1, Value : inherits
-Line : 1, Type : 22, Value : A2I
-Line : 1, Type : 41, Value : {
-Line : 3, Type : 23, Value : main
-Line : 3, Type : 43, Value : (
-Line : 3, Type : 44, Value : )
-Line : 3, Type : 48, Value : :
-Line : 3, Type : 22, Value : Object
-Line : 3, Type : 41, Value : {
-Line : 4, Type : 23, Value : i
-Line : 4, Type : 48, Value : :
-Line : 4, Type : 22, Value : Int
-Line : 4, Type : 31, Value : -
-Line : 4, Type : 28, Value : >
-Line : 4, Type : 23, Value : a2i
-Line : 4, Type : 43, Value : (
-Line : 4, Type : 43, Value : (
-Line : 4, Type : 17, Value : new
-Line : 4, Type : 22, Value : IO
-Line : 4, Type : 44, Value : )
-Line : 4, Type : 50, Value : .
-Line : 4, Type : 23, Value : in_string
-Line : 4, Type : 43, Value : (
-Line : 4, Type : 44, Value : )
-Line : 4, Type : 44, Value : )
-Line : 4, Type : 47, Value : ;
-Line : 6, Type : 3, Value : if
-Line : 6, Type : 23, Value : i
-Line : 6, Type : 27, Value : <
-Line : 6, Type : 20, Value : 10
-Line : 7, Type : 4, Value : then
-Line : 7, Type : 43, Value : (
-Line : 7, Type : 17, Value : new
-Line : 7, Type : 22, Value : IO
-Line : 7, Type : 44, Value : )
-Line : 7, Type : 50, Value : .
-Line : 7, Type : 23, Value : out_string
-Line : 7, Type : 43, Value : (
-Line : 7, Type : 21, Value : "Bad Luck\n"
-Line : 7, Type : 44, Value : )
-Line : 8, Type : 5, Value : else
-Line : 8, Type : 43, Value : (
-Line : 8, Type : 17, Value : new
-Line : 8, Type : 22, Value : IO
-Line : 8, Type : 44, Value : )
-Line : 8, Type : 50, Value : .
-Line : 8, Type : 23, Value : out_string
-Line : 8, Type : 43, Value : (
-Line : 8, Type : 21, Value : "Good Luck\n"
-Line : 8, Type : 44, Value : )
-Line : 9, Type : 3, Value : if
-Line : 9, Type : 22, Value : FALSE
-Line : 9, Type : 4, Value : then
-Line : 9, Type : 43, Value : (
-Line : 9, Type : 17, Value : new
-Line : 9, Type : 22, Value : IO
-Line : 9, Type : 44, Value : )
-Line : 9, Type : 50, Value : .
-Line : 9, Type : 23, Value : out_string
-Line : 9, Type : 43, Value : (
-Line : 9, Type : 21, Value : "False\n"
-Line : 9, Type : 44, Value : )
-Line : 11, Type : 42, Value : }
-Line : 11, Type : 47, Value : ;
-Line : 13, Type : 42, Value : }
-Line : 13, Type : 47, Value : ;
-Line : 14, Type : -1, Value : <EOF>
+1
+CLASS
+1
+TYPE
+Main
+1
+INHERITS
+1
+TYPE
+A2I
+1
+LEFT_CURLY_BRACES
+3
+ID
+main
+3
+LEFT_BRACKET
+3
+RIGHT_BRACKET
+3
+COLON
+3
+TYPE
+Object
+3
+LEFT_CURLY_BRACES
+4
+ID
+i
+4
+COLON
+4
+TYPE
+Int
+4
+MINUS
+4
+BIGGER_THAN
+4
+ID
+a2i
+4
+LEFT_BRACKET
+4
+LEFT_BRACKET
+4
+NEW
+4
+TYPE
+IO
+4
+RIGHT_BRACKET
+4
+DOT
+4
+ID
+in_string
+4
+LEFT_BRACKET
+4
+RIGHT_BRACKET
+4
+RIGHT_BRACKET
+4
+SEMICOLON
+6
+IF
+6
+ID
+i
+6
+SMALLER_THAN
+6
+INTEGER
+10
+7
+THEN
+7
+LEFT_BRACKET
+7
+NEW
+7
+TYPE
+IO
+7
+RIGHT_BRACKET
+7
+DOT
+7
+ID
+out_string
+7
+LEFT_BRACKET
+7
+LITERAL
+"Bad Luck\n"
+7
+RIGHT_BRACKET
+8
+ELSE
+8
+LEFT_BRACKET
+8
+NEW
+8
+TYPE
+IO
+8
+RIGHT_BRACKET
+8
+DOT
+8
+ID
+out_string
+8
+LEFT_BRACKET
+8
+LITERAL
+"Good Luck\n"
+8
+RIGHT_BRACKET
+9
+IF
+9
+TYPE
+FALSE
+9
+THEN
+9
+LEFT_BRACKET
+9
+NEW
+9
+TYPE
+IO
+9
+RIGHT_BRACKET
+9
+DOT
+9
+ID
+out_string
+9
+LEFT_BRACKET
+9
+LITERAL
+"False\n"
+9
+RIGHT_BRACKET
+11
+RIGHT_CURLY_BRACES
+11
+SEMICOLON
+13
+RIGHT_CURLY_BRACES
+13
+SEMICOLON
+14
+EOF
