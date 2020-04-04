@@ -92,7 +92,7 @@ ID : [a-zA-Z][_a-zA-Z0-9]*;
 ASSIGN_OPERATOR : '<-' ;
 CASE_ARROW : '=>' ;
 
-EQUAL : '=' ;
+EQUALS : '=' ;
 SMALLER_THAN : '<' ;
 BIGGER_THAN : '>' ;
 LESS_THAN_OR_EQUAL : '<=';
@@ -110,15 +110,15 @@ CLOSE_COMMENT : '*)';
 COMMENT : OPEN_COMMENT (COMMENT | .)*? CLOSE_COMMENT -> skip ;
 ONE_LINE_COMMENT: '--' (~ '\n')* '\n'? -> skip ;
 
-OPEN_CURLY : '{' ;
-CLOSE_CURLY : '}' ;
-OPENP_PRANSIS : '(' ;
-CLOSE_PRANSIS : ')' ;
-OPEN_SQUARE : '[';
-CLOSE_SQUARE: ']';
+LEFT_CURLY_BRACES : '{' ; //RIG<HT<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+RIGHT_CURLY_BRACES : '}' ;
+LEFT_BRACKET : '(' ;
+RIGHT_BRACKET : ')' ;
+LEFT_SQUARE_BRACKET : '[';
+RIGHT_SQUARE_BRACKET: ']';
 
-SEMICOLUN : ';';
-COLUN : ':' ;
+SEMICOLON : ';';
+COLON : ':' ;
 COMMA : ',' ;
 DOT : '.';
 AT : '@';
