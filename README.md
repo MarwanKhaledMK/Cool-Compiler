@@ -14,8 +14,12 @@ This project will direct you to design and build an interpreter for Cool. Each p
 - Install [java JDK 13.0.1](https://www.youtube.com/watch?v=jAXmmAr9KzU)
 - Install [ANTLRV4 Plug-in Version 4.8 on IntelliJ](https://blog.dgunia.de/2017/10/26/creating-and-testing-an-antlr-parser-with-intellij-idea-or-android-studio/)
 - Import [antlr-4.8-complete.jar](https://www.youtube.com/watch?v=rCFMKUtN7rM)
+- set gen folder as source root
 
-Now the project is ready to be lunched 😉
+    -how to set gen folder as source root: 
+    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/source%20root.png "source root")
+
+#### Now the project is ready to be lunched 😉
 
 ## How to run ?
 - The Program's Main Class is found in gen folder and it's running from there
