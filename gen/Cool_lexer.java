@@ -1,4 +1,4 @@
-// Generated from C:/Users/mero_/Desktop/lexerproject/src\Cool_lexer.g4 by ANTLR 4.8
+// Generated from D:/CE 4th Year/2nd term/Compiler/project/Cool-Lexer-master/src\Cool_lexer.g4 by ANTLR 4.8
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -16,14 +16,15 @@ public class Cool_lexer extends Lexer {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		INHERITS=1, CLASS=2, IF=3, THEN=4, ELSE=5, FI=6, WHILE=7, LOOP=8, POOL=9, 
+		INHERITS=1, CLASS=2, IF=3, THEN=4, ELSE=5, FI=6, WHILE=7, LOOP=8, POOL=9,   //20,21,22,23 & error
 		LET=10, IN=11, CASE=12, OF=13, ESAC=14, ISVOID=15, NOT=16, NEW=17, TRUE=18, 
 		FALSE=19, INTEGER=20, LITERAL=21, TYPE=22, ID=23, ASSIGN_OPERATOR=24, 
-		CASE_ARROW=25, EQUAL=26, SMALLER_THAN=27, BIGGER_THAN=28, LESS_THAN_OR_EQUAL=29, 
+		CASE_ARROW=25, EQUALS=26, SMALLER_THAN=27, BIGGER_THAN=28, LESS_THAN_OR_EQUAL=29, 
 		PLUS=30, MINUS=31, DIVIDE=32, MULTIPLY=33, INTEGER_NEGATIVE=34, WHITESPACE=35, 
 		NEWLINE=36, OPEN_COMMENT=37, CLOSE_COMMENT=38, COMMENT=39, ONE_LINE_COMMENT=40, 
-		OPEN_CURLY=41, CLOSE_CURLY=42, OPENP_PRANSIS=43, CLOSE_PRANSIS=44, OPEN_SQUARE=45, 
-		CLOSE_SQUARE=46, SEMICOLUN=47, COLUN=48, COMMA=49, DOT=50, AT=51, ERROR=52;
+		LEFT_CURLY_BRACES=41, RIGHT_CURLY_BRACES=42, LEFT_BRACKET=43, RIGHT_BRACKET=44, 
+		LEFT_SQUARE_BRACKET=45, RIGHT_SQUARE_BRACKET=46, SEMICOLON=47, COLON=48, 
+		COMMA=49, DOT=50, AT=51, ERROR=52;
 	public static String[] channelNames = {
 		"DEFAULT_TOKEN_CHANNEL", "HIDDEN"
 	};
@@ -38,11 +39,12 @@ public class Cool_lexer extends Lexer {
 			"U", "V", "W", "INHERITS", "CLASS", "IF", "THEN", "ELSE", "FI", "WHILE", 
 			"LOOP", "POOL", "LET", "IN", "CASE", "OF", "ESAC", "ISVOID", "NOT", "NEW", 
 			"TRUE", "FALSE", "INTEGER", "LITERAL", "TYPE", "ID", "ASSIGN_OPERATOR", 
-			"CASE_ARROW", "EQUAL", "SMALLER_THAN", "BIGGER_THAN", "LESS_THAN_OR_EQUAL", 
+			"CASE_ARROW", "EQUALS", "SMALLER_THAN", "BIGGER_THAN", "LESS_THAN_OR_EQUAL", 
 			"PLUS", "MINUS", "DIVIDE", "MULTIPLY", "INTEGER_NEGATIVE", "WHITESPACE", 
 			"NEWLINE", "OPEN_COMMENT", "CLOSE_COMMENT", "COMMENT", "ONE_LINE_COMMENT", 
-			"OPEN_CURLY", "CLOSE_CURLY", "OPENP_PRANSIS", "CLOSE_PRANSIS", "OPEN_SQUARE", 
-			"CLOSE_SQUARE", "SEMICOLUN", "COLUN", "COMMA", "DOT", "AT", "ERROR"
+			"LEFT_CURLY_BRACES", "RIGHT_CURLY_BRACES", "LEFT_BRACKET", "RIGHT_BRACKET", 
+			"LEFT_SQUARE_BRACKET", "RIGHT_SQUARE_BRACKET", "SEMICOLON", "COLON", 
+			"COMMA", "DOT", "AT", "ERROR"
 		};
 	}
 	public static final String[] ruleNames = makeRuleNames();
@@ -62,16 +64,20 @@ public class Cool_lexer extends Lexer {
 			null, "INHERITS", "CLASS", "IF", "THEN", "ELSE", "FI", "WHILE", "LOOP", 
 			"POOL", "LET", "IN", "CASE", "OF", "ESAC", "ISVOID", "NOT", "NEW", "TRUE", 
 			"FALSE", "INTEGER", "LITERAL", "TYPE", "ID", "ASSIGN_OPERATOR", "CASE_ARROW", 
-			"EQUAL", "SMALLER_THAN", "BIGGER_THAN", "LESS_THAN_OR_EQUAL", "PLUS", 
+			"EQUALS", "SMALLER_THAN", "BIGGER_THAN", "LESS_THAN_OR_EQUAL", "PLUS", 
 			"MINUS", "DIVIDE", "MULTIPLY", "INTEGER_NEGATIVE", "WHITESPACE", "NEWLINE", 
-			"OPEN_COMMENT", "CLOSE_COMMENT", "COMMENT", "ONE_LINE_COMMENT", "OPEN_CURLY", 
-			"CLOSE_CURLY", "OPENP_PRANSIS", "CLOSE_PRANSIS", "OPEN_SQUARE", "CLOSE_SQUARE", 
-			"SEMICOLUN", "COLUN", "COMMA", "DOT", "AT", "ERROR"
+			"OPEN_COMMENT", "CLOSE_COMMENT", "COMMENT", "ONE_LINE_COMMENT", "LEFT_CURLY_BRACES", 
+			"RIGHT_CURLY_BRACES", "LEFT_BRACKET", "RIGHT_BRACKET", "LEFT_SQUARE_BRACKET", 
+			"RIGHT_SQUARE_BRACKET", "SEMICOLON", "COLON", "COMMA", "DOT", "AT", "ERROR"
 		};
 	}
 	private static final String[] _SYMBOLIC_NAMES = makeSymbolicNames();
 	public static final Vocabulary VOCABULARY = new VocabularyImpl(_LITERAL_NAMES, _SYMBOLIC_NAMES);
+	public static String getTokenName(int id){
 
+		if(id == -1) return "EOF";
+		else return _SYMBOLIC_NAMES[id];
+	}
 	/**
 	 * @deprecated Use {@link #VOCABULARY} instead.
 	 */
