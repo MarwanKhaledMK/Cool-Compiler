@@ -15,6 +15,10 @@ This project will direct you to design and build an interpreter for Cool. Each p
 - Install [ANTLRV4 Plug-in Version 4.8 on IntelliJ](https://blog.dgunia.de/2017/10/26/creating-and-testing-an-antlr-parser-with-intellij-idea-or-android-studio/)
 - Import [antlr-4.8-complete.jar](https://www.youtube.com/watch?v=rCFMKUtN7rM)
 
+### Setup
+ Setup: 
+    ![alt text](https://github.com/MarwanKhaledMK/Cool-Lexer/blob/master/testcases/setup.png "setup")
+        
 Now the project is ready to be lunched 😉
 
 ## How to run ?
@@ -40,14 +44,15 @@ If the lexical analyzer finds a token invalid, it generates an error. The lexica
 
 2) Test cases good.cl and bad.cl. The first lex correctly and yield a sequence of tokens. The second contain an error.
     - good.cl contain program that calculate factorial
-     good.cl code: 
-    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl.png "Input : good.cl code")
-    
-    - good.cl-lex tokens: 
-    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl-lex.png "Output : good.cl-lex")
+        - good.cl code: 
+        ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl.png "Input : good.cl code")
+
+        - good.cl-lex tokens: 
+        ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/good.cl-lex.png "Output : good.cl-lex")
+        
     - bad.cl is corrupted syntax program contain random symbols
-    bad.cl code: 
-    ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/bad.cl.png "Input & Output : bad.cl code")
+        - bad.cl code: 
+        ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/bad.cl.png "Input & Output : bad.cl code")
 
 
 
