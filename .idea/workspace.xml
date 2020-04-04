@@ -22,7 +22,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+<<<<<<< Updated upstream
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../antlr-4.7.1-complete.jar!/" />
+=======
+    <property name="last_opened_file_path" value="D:/CE 4th Year/2nd term/Compiler/project/final/Cool-Lexer-master" />
+>>>>>>> Stashed changes
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -55,14 +59,24 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< Updated upstream
     <state x="275" y="27" key="#Project_Structure" timestamp="1585847024986">
       <screen x="0" y="0" width="1366" height="738" />
+=======
+    <state x="361" y="91" key="#Notifications" timestamp="1585985889331">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="361" y="91" key="#Notifications/0.0.1536.864@0.0.1536.864" timestamp="1585985889331" />
+    <state x="309" y="32" key="#Project_Structure" timestamp="1585982494639">
+      <screen x="0" y="0" width="1536" height="864" />
+>>>>>>> Stashed changes
     </state>
     <state x="275" y="27" key="#Project_Structure/0.0.1366.738@0.0.1366.738" timestamp="1585847024986" />
     <state x="448" y="172" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1585847281948">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="448" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585847281948" />
+<<<<<<< Updated upstream
     <state x="463" y="123" key="FileChooserDialogImpl" timestamp="1585847021037">
       <screen x="0" y="0" width="1366" height="738" />
     </state>
@@ -91,5 +105,50 @@
       <screen x="0" y="0" width="1366" height="738" />
     </state>
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585856714922" />
+=======
+    <state x="521" y="144" key="FileChooserDialogImpl" timestamp="1586015529441">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585847021037" />
+    <state x="521" y="144" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1586015529441" />
+    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1585986122738">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1323" height="184" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
+    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1585986122738" />
+    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1585986122738">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1323" height="184" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
+    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1585986122738" />
+    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1585986122738">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1323" height="184" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
+    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1585986122738" />
+    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1585986122738">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state width="1323" height="184" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
+    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1585986122738" />
+    <state x="183" y="0" key="SettingsEditor" timestamp="1585986119036">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="163" y="0" key="SettingsEditor/0.0.1366.738@0.0.1366.738" timestamp="1585847180209" />
+    <state x="183" y="0" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1585986119036" />
+    <state x="426" y="226" key="com.intellij.ide.util.TipDialog" timestamp="1586015505052">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585856714922" />
+    <state x="426" y="226" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1586015505052" />
+    <state x="462" y="30" width="611" height="804" key="find.popup" timestamp="1585978708873">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="462" y="30" width="611" height="804" key="find.popup/0.0.1536.864@0.0.1536.864" timestamp="1585978708873" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1585974340109">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1585974340109" />
+>>>>>>> Stashed changes
   </component>
 </project>
