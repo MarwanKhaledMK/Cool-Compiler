@@ -53,5 +53,11 @@ If the lexical analyzer finds a token invalid, it generates an error. The lexica
     bad.cl code: 
     ![alt text](https://github.com/Mustafa-Taha/Cool-Lexer/blob/master/testcases/bad.cl.png "Input & Output : bad.cl code")
 
-
+## Contributers:
+- Marwan Khaled Zenhom 
+- Mostafa Ibrahim Taha 
+- Sara Khaled Ahmed 
+- Mohamed Hassan Mohamed 
+- Rana Ebrahim Mohamed 
+- Andrew Anter 
 
