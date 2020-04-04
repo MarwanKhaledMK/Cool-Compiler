@@ -17,6 +17,18 @@ This project will direct you to design and build an interpreter for Cool. Each p
 
 Now the project is ready to be lunched 😉
 
+## How to run ?
+- The Program's Main Class is found in gen folder and it's running from there
+- Write the name of the .cl file only, For Example:
+For the good test cases write:
+```
+good
+```
+For the bad test cases write:
+```
+bad
+```
+
 ## Lexical analyzer:
 ### Introduction :
 Lexical analysis is the first phase of a compiler. It takes the modified source code from language preprocessors that are written in the form of sentences. The lexical analyzer breaks these syntaxes into a series of tokens, by removing any whitespace or comments in the source code.
