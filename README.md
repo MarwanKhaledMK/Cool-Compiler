@@ -1,8 +1,8 @@
-# COOL_Interpreter
+# COOL Compiler
 ## Compiler's project overview:
 
-This project will direct you to design and build an interpreter for Cool. Each phase will cover one component of the interpreter:    lexical analysis, parsing, and code generation in three address code. Each phase will ultimately result in a working compiler phase which can interface with the other phases.
-
+- This project will direct you to design and build an interpreter for Cool. Each phase will cover one component of the interpreter:    lexical analysis, parsing, and code generation in three address code. Each phase will ultimately result in a working compiler phase which can interface with the other phases.
+- We are now in the First Phase which is the Lexer.
 ## Prerequisites
 - Worked on [IntelliJ IDEA Community Edition 2019.3.3](https://confluence.jetbrains.com/display/IDEADEV/IDEA+2019.3+latest+builds)
 - [java JDK 13.0.1](https://www.oracle.com/java/technologies/javase-jdk13-downloads.html)
