@@ -1,7 +1,8 @@
-# COOL_Interpreter
+# COOL Compiler
 ## Compiler's project overview:
 
-This project will direct you to design and build an interpreter for Cool. Each phase will cover one component of the interpreter:    lexical analysis, parsing, and code generation in three address code. Each phase will ultimately result in a working compiler phase which can interface with the other phases.
+- This project will direct you to design and build an interpreter for Cool. Each phase will cover one component of the interpreter:    lexical analysis, parsing, and code generation in three address code. Each phase will ultimately result in a working compiler phase which can interface with the other phases.
+- **We are working on _The Lexer Phase_**
 
 ## Prerequisites
 - Worked on [IntelliJ IDEA Community Edition 2019.3.3](https://confluence.jetbrains.com/display/IDEADEV/IDEA+2019.3+latest+builds)
@@ -60,4 +61,3 @@ If the lexical analyzer finds a token invalid, it generates an error. The lexica
 - Mohamed Hassan Mohamed 
 - Rana Ebrahim Mohamed 
 - Andrew Anter 
-
