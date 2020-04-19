@@ -12,7 +12,14 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     Take the name of cool code file and compile it through out lexical & Parsing analysis
 
+     It's the Main function responsible to lunch the program
+     - lexical analysis
+     - parsing analysis
+     @returns output the lexer tokens and draw the parse tree if there's no syntax error
+     */
     public static void main(String[] args) throws Exception {
         //boolean exists ;
         String inputFilePath = "", outputFilePath = "";
@@ -67,7 +74,14 @@ public class Main {
 
 
     }
+    /**
+     This function write out the output of lexical analysis into inputfile.cl-lex format
 
+     @param fileName Name of targeted COOL file.
+     @param tokens Generated tokens of that file using ANTLR libs.
+     @param noOfLines # of lines in COOL file.
+     @returns write out the tokens and their types in specific format.
+     */
     private static void writeLexerOutput(String fileName, List<Token> tokens, int noOfLines) {
         File file = new File(fileName);
         FileWriter fr = null;

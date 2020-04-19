@@ -91,30 +91,65 @@ public class Cool_parser extends Parser {
 		}
 	}
 
+	/**
+	 {@link #getTokenNames()} getter function.
+
+	 @returns Token Name.
+	 */
 	@Override
 	@Deprecated
 	public String[] getTokenNames() {
 		return tokenNames;
 	}
 
-	@Override
+	/**
+	{@link #getVocabulary()} getter function.
 
+	@returns VOCABULARY.
+     */
+	@Override
 	public Vocabulary getVocabulary() {
 		return VOCABULARY;
 	}
 
+	/**
+	 {@link #getGrammarFileName()} getter function.
+
+	 @returns File Name of grammer.
+	 */
 	@Override
 	public String getGrammarFileName() { return "Cool_parser.g4"; }
 
+	/**
+	 {@link #getRuleNames()} getter function.
+
+	 @returns Name of Rule type.
+	 */
 	@Override
 	public String[] getRuleNames() { return ruleNames; }
 
+	/**
+	 {@link #getSerializedATN()} getter function.
+
+	 @returns _serializedATN.
+	 */
 	@Override
 	public String getSerializedATN() { return _serializedATN; }
 
+	/**
+	 {@link #getATN()} getter function.
+
+	 @returns ATNDeserializer().deserialize(_serializedATN.toCharArray());.
+	 */
 	@Override
 	public ATN getATN() { return _ATN; }
 
+	/**
+	 Constructor of class {@link #Cool_parser} .
+
+	 @param input TokenStream class object.
+	 @returns Interpret it into ParserATNSimulator .
+	 */
 	public Cool_parser(TokenStream input) {
 		super(input);
 		_interp = new ParserATNSimulator(this,_ATN,_decisionToDFA,_sharedContextCache);
@@ -870,6 +905,11 @@ public class Cool_parser extends Parser {
 		}
 	}
 
+	/**
+	 {@link #branch_list()}
+
+	 @returns Branch_listContext class object .
+	 */
 	public final Branch_listContext branch_list() throws RecognitionException {
 		Branch_listContext _localctx = new Branch_listContext(_ctx, getState());
 		enterRule(_localctx, 18, RULE_branch_list);
@@ -941,6 +981,12 @@ public class Cool_parser extends Parser {
 		}
 	}
 
+	/**
+	 {@link #branch_entity()}  .
+
+	 ]
+	 @returns Branch_entityContext class object.
+	 */
 	public final Branch_entityContext branch_entity() throws RecognitionException {
 		Branch_entityContext _localctx = new Branch_entityContext(_ctx, getState());
 		enterRule(_localctx, 20, RULE_branch_entity);
@@ -1470,9 +1516,24 @@ public class Cool_parser extends Parser {
 		public ExprContext expr() {
 			return getRuleContext(ExprContext.class,0);
 		}
+
+		/**
+		 @returns Obtain Rule Context given Branch_listContext.class .
+		 */
+		/**
+		 * {@link #branch_list()} Obtain Rule Context given Branch_listContext.class .
+		 *
+		 * @returns getRuleContext(Branch_listContext.class,0)
+		 */
 		public Branch_listContext branch_list() {
 			return getRuleContext(Branch_listContext.class,0);
 		}
+		/**
+		 * {@link #CaseContext()} Copy from ctx .
+		 *
+		 * @param ctx ExprContext class object .
+		 * @returns
+		 */
 		public CaseContext(ExprContext ctx) { copyFrom(ctx); }
 		@Override
 		public void enterRule(ParseTreeListener listener) {

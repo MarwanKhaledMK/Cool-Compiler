@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0a95beb6-89ea-4a0f-a13c-f4633e85e4d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/gen/AST.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Cool_parser" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Cool_lexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/gen/Cool_lexer.interp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen/Cool_lexer.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/Cool_lexer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gen/Cool_lexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/gen/Cool_lexer.tokens" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gen/Cool_parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/Cool_parser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/gen/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/gen/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lexerproject/Cool_lexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lexerproject/Cool_lexer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lexerproject/Cool_lexer.interp" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lexerproject/Cool_lexer.interp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/lexerproject/Cool_lexer.tokens" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lexerproject/Cool_lexer.tokens" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/output/good.cl-lex" beforeDir="false" afterPath="$PROJECT_DIR$/output/good.cl-lex" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Cool_lexer.g4" beforeDir="false" afterPath="$PROJECT_DIR$/src/Cool_lexer.g4" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/lexerproject/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/lexerproject/Main.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,6 +35,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="last_opened_file_path" value="D:/CE 4th Year/2nd term/Compiler/project/parser/Cool Compiler" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -75,7 +68,26 @@
       <option name="presentableId" value="Default" />
       <updated>1585846966988</updated>
     </task>
+    <task id="LOCAL-00001" summary="Cool Parser">
+      <created>1587300701556</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1587300701556</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Cool Parser">
+      <created>1587300755471</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1587300755471</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Cool Parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="Cool Parser" />
   </component>
   <component name="WindowStateProjectService">
     <state x="309" y="32" key="#Project_Structure" timestamp="1587248170773">
@@ -88,35 +100,35 @@
     </state>
     <state x="448" y="172" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.738@0.0.1366.738" timestamp="1585847281948" />
     <state x="504" y="201" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1536.864@0.0.1536.864" timestamp="1587246631389" />
-    <state x="420" y="27" key="CommitChangelistDialog2" timestamp="1587300736678">
+    <state x="420" y="27" key="CommitChangelistDialog2" timestamp="1587300754679">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="420" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587300736678" />
+    <state x="420" y="27" key="CommitChangelistDialog2/0.0.1536.864@0.0.1536.864" timestamp="1587300754679" />
     <state x="521" y="144" key="FileChooserDialogImpl" timestamp="1587248883617">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="463" y="123" key="FileChooserDialogImpl/0.0.1366.738@0.0.1366.738" timestamp="1585847021037" />
     <state x="521" y="144" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1587248883617" />
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1587300736717">
+    <state width="1493" height="173" key="GridCell.Tab.0.bottom" timestamp="1587302631301">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="184" key="GridCell.Tab.0.bottom/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
-    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1587300736717" />
-    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1587300736717">
+    <state width="1493" height="173" key="GridCell.Tab.0.bottom/0.0.1536.864@0.0.1536.864" timestamp="1587302631301" />
+    <state width="1493" height="173" key="GridCell.Tab.0.center" timestamp="1587302631300">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="184" key="GridCell.Tab.0.center/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
-    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1587300736717" />
-    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1587300736717">
+    <state width="1493" height="173" key="GridCell.Tab.0.center/0.0.1536.864@0.0.1536.864" timestamp="1587302631300" />
+    <state width="1493" height="173" key="GridCell.Tab.0.left" timestamp="1587302631300">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="184" key="GridCell.Tab.0.left/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
-    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1587300736717" />
-    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1587300736717">
+    <state width="1493" height="173" key="GridCell.Tab.0.left/0.0.1536.864@0.0.1536.864" timestamp="1587302631300" />
+    <state width="1493" height="173" key="GridCell.Tab.0.right" timestamp="1587302631301">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state width="1323" height="184" key="GridCell.Tab.0.right/0.0.1366.738@0.0.1366.738" timestamp="1585871903659" />
-    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1587300736717" />
+    <state width="1493" height="173" key="GridCell.Tab.0.right/0.0.1536.864@0.0.1536.864" timestamp="1587302631301" />
     <state x="183" y="0" key="SettingsEditor" timestamp="1586024596556">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
@@ -127,10 +139,10 @@
     </state>
     <state x="379" y="193" key="com.intellij.ide.util.TipDialog/0.0.1366.738@0.0.1366.738" timestamp="1585856714922" />
     <state x="426" y="226" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1587198160831" />
-    <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587300645775">
+    <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587306817167">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
-    <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1587300645775" />
+    <state x="578" y="349" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.864@0.0.1536.864" timestamp="1587306817167" />
     <state x="462" y="30" width="611" height="804" key="find.popup" timestamp="1585978708873">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
