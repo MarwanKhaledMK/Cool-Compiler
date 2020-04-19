@@ -1,15 +1,25 @@
+import org.antlr.v4.gui.TreeViewer;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.CommonTokenStream;
-
+import org.antlr.v4.runtime.misc.ParseCancellationException;
+import org.antlr.v4.runtime.tree.ParseTree;
 import java.io.*;
+import java.util.Arrays;
 import java.util.List;
-//import java.io.IOException;
-//import java.io.File;
+import java.io.IOException;
+import java.io.File;
 import java.util.Scanner;
 
 public class Main {
+    /**
+     Take the name of cool code file and compile it through out lexical & Parsing analysis
 
+     It's the Main function responsible to lunch the program
+     - lexical analysis
+     - parsing analysis
+     @returns output the lexer tokens and draw the parse tree if there's no syntax error
+     */
     public static void main(String[] args) throws Exception {
         //boolean exists ;
         String inputFilePath = "", outputFilePath = "";
@@ -32,7 +42,7 @@ public class Main {
         //to detect if there is an error in lexems
         Boolean err = false;
         for (int i = 0; i < allTokens.size(); i++) {
-            if (allTokens.get(i).getType() == 52) {
+            if (allTokens.get(i).getType() == 49) {
                 err = true;
                 System.out.print("\n" + "ERROR: ");
                 System.out.printf("%3d: ", allTokens.get(i).getLine());
@@ -41,13 +51,37 @@ public class Main {
             }
         }
         if (!err) {
-            System.out.println("\n" + "The file passes lexer test.");
             writeLexerOutput(outputFilePath + ".cl-lex", allTokens, allTokens.size());
+            //--------------------------------------------------------------------------------------------------------------
+            try {
+                // parser uses tokens.
+                Cool_parser parser = new Cool_parser(tokens);
+                // assign the parser program to the tree to be viewed later.
+                ParseTree tree = parser.program();
+                // a tree viewer which displays the program hierarchical structure as a tree,
+                // given the tree itself and rules names.
+                TreeViewer viewer = new TreeViewer(Arrays.asList(parser.getRuleNames()), tree);
+                // opens the JFrame on which the tree was illustrated.
+                viewer.open();
+                System.out.println("The output of the syntax tree was opened in an external window.");
+                // to print the structure of the tree in a single line.
+                //System.out.println(tree.toStringTree(parser));
+            }catch (ParseCancellationException e){
+                System.out.println("Parsing was cancelled due to some error.");
+            }
+            //--------------------------------------------------------------------------------------------------------------
         }
 
 
     }
+    /**
+     This function write out the output of lexical analysis into inputfile.cl-lex format
 
+     @param fileName Name of targeted COOL file.
+     @param tokens Generated tokens of that file using ANTLR libs.
+     @param noOfLines # of lines in COOL file.
+     @returns write out the tokens and their types in specific format.
+     */
     private static void writeLexerOutput(String fileName, List<Token> tokens, int noOfLines) {
         File file = new File(fileName);
         FileWriter fr = null;
@@ -60,13 +94,13 @@ public class Main {
                 dataWithNewLine +=
                         tokens.get(noOfLines - i).getLine() +
                                 "\n" + Cool_lexer.getTokenName(tokens.get(noOfLines - i).getType());
-                if (tokens.get(noOfLines - i).getType() >= 20 && tokens.get(noOfLines - i).getType() <= 23)
+                if (tokens.get(noOfLines - i).getType() >= 17 && tokens.get(noOfLines - i).getType() <= 20)
                     dataWithNewLine += "\n" + tokens.get(noOfLines - i).getText();
                 br.write(dataWithNewLine);
                 br.newLine();
                 dataWithNewLine = "";
             }
-            System.out.println("Writing tokens file is done");
+            System.out.println("\n**Lexical analysis is done, tokens file was generated in the output directory.**");
         } catch (IOException e) {
             e.printStackTrace();
         } finally {
