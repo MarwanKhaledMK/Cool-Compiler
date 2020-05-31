@@ -87,7 +87,12 @@ Syntax analyzers follow production rules defined by means of context-free gramma
 
 5-to directly use the parser output for interpretation, the visitor is a good choice. You have full control of the traversal, so in conditionals only one branch is visited, loops can be visited n times and so on.
 
-*so we used Visitor method*
+*so we used Visitor method:*
+### Original Code:
+![alt text](https://github.com/MarwanKhaledMK/Cool-Compiler/blob/master/testcases/originalcode.png "Original Code")
+
+### Three Address Code:
+![alt text](https://github.com/MarwanKhaledMK/Cool-Compiler/blob/master/testcases/3addresscode.png "3 Address Code")
 
 ## Contributers:
 - Marwan Khaled Zenhom 
