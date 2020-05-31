@@ -1,26 +1,30 @@
-class Main inherits IO{
+class B {
+    s : String <- "Hello";
+    g(y:String) : Int {
+        y.concat(s)
+    };
+    f(x:Int) : Int {
+        x*6
+    };
+};
 
-  main():Object{
-    {
-      out_int(fact_r(in_int()));
-      out_string("\n");
-      out_int(fact_itr(in_int()));
-    }
-  };
+class A {
+    a : Int;
+    b : B <- new B;
+    f(x:Int) : Int {
+        x+a
+    };
+};
+class Main{
 
-  fact_r(i : Int):Int{
-	if(i=0) then 1 else (fact_r(i-1)*i) fi
-  };
+f(x:Int) : Int {
+        x+a
+    };
 
-  fact_itr(i : Int):Int{
-	let fact:Int <- 1 in {
-        while(not(i=0)) loop
-        {
-          fact <- fact*i;
-          i <- i-1;
-        }
-      	pool;
-      fact;
-    }
-  };
+   main():Object{
+
+       f(8)
+
+
+   };
 };

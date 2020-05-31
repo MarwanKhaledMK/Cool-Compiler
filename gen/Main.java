@@ -12,6 +12,7 @@ import java.io.File;
 import java.util.Scanner;
 
 public class Main {
+    public static BufferedWriter writer, writer2 ;
     /**
      Take the name of cool code file and compile it through out lexical & Parsing analysis
 
@@ -32,6 +33,9 @@ public class Main {
         outputFilePath = outputFilePath.substring(0, outputFilePath.indexOf("."));
         outputFilePath = "output/" + outputFilePath;
 
+        writer = new BufferedWriter(new FileWriter(outputFilePath, true));
+        writer2 = new BufferedWriter(new FileWriter(outputFilePath, true));
+
         CharStream input = CharStreams.fromFileName(inputFilePath);
         Cool_lexer lexer = new Cool_lexer(input);
 
@@ -51,9 +55,31 @@ public class Main {
             }
         }
         if (!err) {
+            System.out.println("The file passes lexer test.");
             writeLexerOutput(outputFilePath + ".cl-lex", allTokens, allTokens.size());
             //--------------------------------------------------------------------------------------------------------------
             try {
+                System.out.println("Generating three addressing code...");
+                //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+                FileInputStream fis = new FileInputStream(new File(inputFilePath));
+                ANTLRInputStream inp = new ANTLRInputStream(fis);
+                lex lexe = new lex(inp);
+                CommonTokenStream tokenStream = new CommonTokenStream(lexe);
+                tokenStream.fill();
+                parse pars = new parse(tokenStream);
+                pars.removeErrorListeners();
+                pars.addErrorListener(new ThrowingErrorListener());
+
+
+
+                parse.ProgramContext pro = pars.program();
+                pro.value.gen();
+                for(String s: AST_.prog3AdCode){
+                    System.out.println(s);
+                    writer.write(s + "\n");
+                }
+
+                //<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
                 // parser uses tokens.
                 Cool_parser parser = new Cool_parser(tokens);
                 // assign the parser program to the tree to be viewed later.
@@ -65,7 +91,7 @@ public class Main {
                 viewer.open();
                 System.out.println("The output of the syntax tree was opened in an external window.");
                 // to print the structure of the tree in a single line.
-                //System.out.println(tree.toStringTree(parser));
+//                System.out.println(tree.toStringTree(parser));
             }catch (ParseCancellationException e){
                 System.out.println("Parsing was cancelled due to some error.");
             }
@@ -94,6 +120,10 @@ public class Main {
                 dataWithNewLine +=
                         tokens.get(noOfLines - i).getLine() +
                                 "\n" + Cool_lexer.getTokenName(tokens.get(noOfLines - i).getType());
+//                        "Line : " + tokens.get(noOfLines-i).getLine() +
+//                                ", Type : " + tokens.get(noOfLines-i).getType() +
+//                                ", Value : " + tokens.get(noOfLines-i).getText() ;
+
                 if (tokens.get(noOfLines - i).getType() >= 17 && tokens.get(noOfLines - i).getType() <= 20)
                     dataWithNewLine += "\n" + tokens.get(noOfLines - i).getText();
                 br.write(dataWithNewLine);

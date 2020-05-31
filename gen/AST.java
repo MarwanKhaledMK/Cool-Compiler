@@ -1,6 +1,9 @@
 import java.util.*;
+import org.stringtemplate.v4.ST;
+
 
 public class AST {
+    public static ArrayList<String> threeAddressCode = new ArrayList<>();
     public static int tCounter = 1; //counter for temp variables
     public static int lCounter = 1; // counter for labels
     public static String sp = "  ";
@@ -123,6 +126,7 @@ public class AST {
             name = n;
             type = t;
             lineNo = l;
+//            System.out.println("111111" + flag);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
         // Construct with 2 string as a parameter & 1 integer & Expression
@@ -132,6 +136,7 @@ public class AST {
             lineNo = l;
             this.e = e;
             flag = true;
+//            System.out.println("222222" + flag);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
         String getString(String space){
@@ -144,6 +149,7 @@ public class AST {
         void generate(){
             if(flag){
                 e.generate();
+                threeAddressCode.add(name + " = " + e.getV());//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             }
         }
 
@@ -220,6 +226,7 @@ public class AST {
 
         void generate(){
             e.generate();
+            threeAddressCode.add(v + " = " +e.getV());//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
         @java.lang.Override
@@ -280,8 +287,13 @@ public class AST {
 
         void gen(){
             e1.generate();
+            threeAddressCode.add("ifFalse " + e1.getV() + " goto " + before_else);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             e2.generate();
+            threeAddressCode.add("goto " + after_else);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            threeAddressCode.add(before_else + ": ");//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             e3.generate();
+            threeAddressCode.add(after_else + ": ");//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            //threeAddressCode.add( Integer.toString(value));
         }
 
         @Override
@@ -313,8 +325,12 @@ public class AST {
         // Generate The Three address code
         @Override
         void generate(){
+            threeAddressCode.add(before + ": ");//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             e1.generate();
+            threeAddressCode.add("ifFalse " + e1.getV() + " goto " + after);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             e2.generate();
+            threeAddressCode.add("goto " + before);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+            threeAddressCode.add(after + ": ");//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
     }
 
@@ -343,6 +359,7 @@ public class AST {
             for (Expression e : blockOfexprs){
                 e.generate();
                 list = e;
+                threeAddressCode.add(v + " = "+ list.getV());//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
             }
         }
 
@@ -378,10 +395,12 @@ public class AST {
             for (AST.Expression it : exprs){
                 if(flags.get(po)){
                     it.generate();
+                    threeAddressCode.add(ids.get(po) + " = " + it.getV());//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
                 }
                 po++;
             }
             expression.generate();
+            threeAddressCode.add(v + " = " + expression.getV());//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
         @Override
@@ -463,6 +482,7 @@ public class AST {
         void generate(){
             expression.generate();
             String command = v + " = " + expression.getV() + " == NULL";
+            threeAddressCode.add(command);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
         @Override
@@ -483,6 +503,7 @@ public class AST {
             this.e2 = e2;
             result = this.calc();
             v = "t" + tCounter++;
+//            System.out.println("-> " + v);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
             switch (op) {
                 case "+":
@@ -543,6 +564,9 @@ public class AST {
         void generate () {
             e1.calc();
             e2.calc();
+            threeAddressCode.add(
+                    v + " = " + e1.getV() + op + e2.getV()
+            );//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
 
         @java.lang.Override
@@ -590,6 +614,7 @@ public class AST {
             e1.generate();
             e2.generate();
             String command = v + " = " + e1.getV() + " " + op + (op.equals("=") ? op : "") + " " + e2.getV();
+            threeAddressCode.add(command);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
         @Override
         String getV(){
@@ -618,6 +643,7 @@ public class AST {
         void generate(){
             e.generate();
             String command = v + " = " + op + " " + e.getV();
+            threeAddressCode.add(command);//<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
         }
         @Override
         String getV(){
