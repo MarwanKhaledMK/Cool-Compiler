@@ -68,6 +68,27 @@ Syntax analyzers follow production rules defined by means of context-free gramma
 ### Code Specification:
 - A program that takes a single command-line argument (e.g., file.cl-lex). That argument will be an ASCII text Cool tokens file (as described in the lexer programming assignment). The cl-lex file will always be well-formed (i.e., there will be no syntax errors in the cl-lex file itself). f your program is called parser, invoking parser file.cl-lex should yield the same output as cool --parse file.cl. Your program can take another argument which is the file to print the output of the Concrete Syntax Tree (CST) as follows: parser file.cl-lex file.cl-cst. Your program should determine and print any errors in the parsing tree and terminate the program.
 - Test cases good.cl and bad.cl. The first should parse correctly and yield an abstract syntax tree. The second should contain an error.
+
+## 3 address code generation:
+### ANTLR4 Provides 2 Methods to generate 3 address code
+
+1- Listener Method
+
+2- Visitor Method
+
+### Diferences between them:
+1-Listener methods are called automatically by the ANTLR provided walker object, whereas visitor methods must walk their children with explicit visit calls. Forgetting to invoke visit() on a node’s children means those subtrees don’t get visited.
+
+2-Listener methods can’t return a value, whereas visitor methods can return any custom type.
+
+3-With listener, you will have to use mutable variables to store values, whereas with visitor there is no such need.
+
+4-Listener uses an explicit stack allocated on the heap, whereas visitor uses call stack to manage tree traversals.
+
+5-to directly use the parser output for interpretation, the visitor is a good choice. You have full control of the traversal, so in conditionals only one branch is visited, loops can be visited n times and so on.
+
+*so we used Visitor method*
+
 ## Contributers:
 - Marwan Khaled Zenhom 
 - Mostafa Ibrahim Taha 
