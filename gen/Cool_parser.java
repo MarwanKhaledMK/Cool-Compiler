@@ -1,4 +1,4 @@
-// Generated from E:/Computer Engineering & Communications/4 - Computer Engineering Fourth Year/2nd Term/Compilers/ParserProject/src\Cool_parser.g4 by ANTLR 4.8
+// Generated from E:/Computer Engineering & Communications/4 - Computer Engineering Fourth Year/2nd Term/Compilers/ParserProject/src\Cool_parser.g4.g4 by ANTLR 4.8
 
 
 	import java.util.*;
@@ -20,26 +20,26 @@ public class Cool_parser extends Parser {
 	protected static final PredictionContextCache _sharedContextCache =
 		new PredictionContextCache();
 	public static final int
-		INHERITS=1, CLASS=2, NEW=3, SELF=4, IF=5, THEN=6, ELSE=7, FI=8, CASE=9, 
-		OF=10, ESAC=11, WHILE=12, LOOP=13, POOL=14, LET=15, IN=16, INTEGER=17, 
-		LITERAL=18, TYPE=19, ID=20, ASSIGN_OPERATOR=21, CASE_ARROW=22, EQUAL=23, 
-		SMALLER_THAN=24, BIGGER_THAN=25, LESS_THAN_OR_EQUAL=26, PLUS=27, MINUS=28, 
-		DIVIDE=29, MULTIPLY=30, INTEGER_NEGATIVE=31, WHITESPACE=32, NEWLINE=33, 
-		OPEN_COMMENT=34, CLOSE_COMMENT=35, COMMENT=36, ONE_LINE_COMMENT=37, OPEN_CURLY=38, 
-		CLOSE_CURLY=39, OPENP_PRANSIS=40, CLOSE_PRANSIS=41, OPEN_SQUARE=42, CLOSE_SQUARE=43, 
-		SEMICOLUN=44, COLUN=45, COMMA=46, DOT=47, AT=48, ERROR=49, ISVOID=50, 
-		NOT=51, TRUE=52, FALSE=53, IDENTIFIER=54, LARROW=55, LBRACE=56, LE=57, 
-		LPAREN=58, LT=59, RARROW=60, RBRACE=61, RPAREN=62, SEMI=63, STRING=64, 
+		INHERITS=1, CLASS=2, NEW=3, SELF=4, IF=5, THEN=6, ELSE=7, FI=8, CASE=9,
+		OF=10, ESAC=11, WHILE=12, LOOP=13, POOL=14, LET=15, IN=16, INTEGER=17,
+		LITERAL=18, TYPE=19, ID=20, ASSIGN_OPERATOR=21, CASE_ARROW=22, EQUAL=23,
+		SMALLER_THAN=24, BIGGER_THAN=25, LESS_THAN_OR_EQUAL=26, PLUS=27, MINUS=28,
+		DIVIDE=29, MULTIPLY=30, INTEGER_NEGATIVE=31, WHITESPACE=32, NEWLINE=33,
+		OPEN_COMMENT=34, CLOSE_COMMENT=35, COMMENT=36, ONE_LINE_COMMENT=37, OPEN_CURLY=38,
+		CLOSE_CURLY=39, OPENP_PRANSIS=40, CLOSE_PRANSIS=41, OPEN_SQUARE=42, CLOSE_SQUARE=43,
+		SEMICOLUN=44, COLUN=45, COMMA=46, DOT=47, AT=48, ERROR=49, ISVOID=50,
+		NOT=51, TRUE=52, FALSE=53, IDENTIFIER=54, LARROW=55, LBRACE=56, LE=57,
+		LPAREN=58, LT=59, RARROW=60, RBRACE=61, RPAREN=62, SEMI=63, STRING=64,
 		TILDE=65, TIMES=66;
 	public static final int
-		RULE_program = 0, RULE_programBlocks = 1, RULE_classDefine = 2, RULE_featureList = 3, 
-		RULE_feature = 4, RULE_method = 5, RULE_property = 6, RULE_formalList = 7, 
-		RULE_formal = 8, RULE_branch_list = 9, RULE_branch_entity = 10, RULE_e_list = 11, 
+		RULE_program = 0, RULE_programBlocks = 1, RULE_classDefine = 2, RULE_featureList = 3,
+		RULE_feature = 4, RULE_method = 5, RULE_property = 6, RULE_formalList = 7,
+		RULE_formal = 8, RULE_branch_list = 9, RULE_branch_entity = 10, RULE_e_list = 11,
 		RULE_expr = 12;
 	private static String[] makeRuleNames() {
 		return new String[] {
-			"program", "programBlocks", "classDefine", "featureList", "feature", 
-			"method", "property", "formalList", "formal", "branch_list", "branch_entity", 
+			"program", "programBlocks", "classDefine", "featureList", "feature",
+			"method", "property", "formalList", "formal", "branch_list", "branch_entity",
 			"e_list", "expr"
 		};
 	}
@@ -47,25 +47,25 @@ public class Cool_parser extends Parser {
 
 	private static String[] makeLiteralNames() {
 		return new String[] {
-			null, null, null, null, null, null, null, null, null, null, null, null, 
-			null, null, null, null, null, null, null, null, null, "'<-'", "'=>'", 
-			"'='", "'<'", "'>'", "'<='", "'+'", "'-'", "'/'", "'*'", "'~'", null, 
-			null, "'(*'", "'*)'", null, null, "'{'", "'}'", "'('", "')'", "'['", 
+			null, null, null, null, null, null, null, null, null, null, null, null,
+			null, null, null, null, null, null, null, null, null, "'<-'", "'=>'",
+			"'='", "'<'", "'>'", "'<='", "'+'", "'-'", "'/'", "'*'", "'~'", null,
+			null, "'(*'", "'*)'", null, null, "'{'", "'}'", "'('", "')'", "'['",
 			"']'", "';'", "':'", "','", "'.'", "'@'"
 		};
 	}
 	private static final String[] _LITERAL_NAMES = makeLiteralNames();
 	private static String[] makeSymbolicNames() {
 		return new String[] {
-			null, "INHERITS", "CLASS", "NEW", "SELF", "IF", "THEN", "ELSE", "FI", 
-			"CASE", "OF", "ESAC", "WHILE", "LOOP", "POOL", "LET", "IN", "INTEGER", 
-			"LITERAL", "TYPE", "ID", "ASSIGN_OPERATOR", "CASE_ARROW", "EQUAL", "SMALLER_THAN", 
-			"BIGGER_THAN", "LESS_THAN_OR_EQUAL", "PLUS", "MINUS", "DIVIDE", "MULTIPLY", 
-			"INTEGER_NEGATIVE", "WHITESPACE", "NEWLINE", "OPEN_COMMENT", "CLOSE_COMMENT", 
-			"COMMENT", "ONE_LINE_COMMENT", "OPEN_CURLY", "CLOSE_CURLY", "OPENP_PRANSIS", 
-			"CLOSE_PRANSIS", "OPEN_SQUARE", "CLOSE_SQUARE", "SEMICOLUN", "COLUN", 
-			"COMMA", "DOT", "AT", "ERROR", "ISVOID", "NOT", "TRUE", "FALSE", "IDENTIFIER", 
-			"LARROW", "LBRACE", "LE", "LPAREN", "LT", "RARROW", "RBRACE", "RPAREN", 
+			null, "INHERITS", "CLASS", "NEW", "SELF", "IF", "THEN", "ELSE", "FI",
+			"CASE", "OF", "ESAC", "WHILE", "LOOP", "POOL", "LET", "IN", "INTEGER",
+			"LITERAL", "TYPE", "ID", "ASSIGN_OPERATOR", "CASE_ARROW", "EQUAL", "SMALLER_THAN",
+			"BIGGER_THAN", "LESS_THAN_OR_EQUAL", "PLUS", "MINUS", "DIVIDE", "MULTIPLY",
+			"INTEGER_NEGATIVE", "WHITESPACE", "NEWLINE", "OPEN_COMMENT", "CLOSE_COMMENT",
+			"COMMENT", "ONE_LINE_COMMENT", "OPEN_CURLY", "CLOSE_CURLY", "OPENP_PRANSIS",
+			"CLOSE_PRANSIS", "OPEN_SQUARE", "CLOSE_SQUARE", "SEMICOLUN", "COLUN",
+			"COMMA", "DOT", "AT", "ERROR", "ISVOID", "NOT", "TRUE", "FALSE", "IDENTIFIER",
+			"LARROW", "LBRACE", "LE", "LPAREN", "LT", "RARROW", "RBRACE", "RPAREN",
 			"SEMI", "STRING", "TILDE", "TIMES"
 		};
 	}
@@ -118,7 +118,7 @@ public class Cool_parser extends Parser {
 	 @returns File Name of grammer.
 	 */
 	@Override
-	public String getGrammarFileName() { return "Cool_parser.g4"; }
+	public String getGrammarFileName() { return "Cool_parser.g4.g4"; }
 
 	/**
 	 {@link #getRuleNames()} getter function.
@@ -191,7 +191,7 @@ public class Cool_parser extends Parser {
 
 			        ((ProgramContext)_localctx).obj =  new AST.Program(((ProgramContext)_localctx).blocks.obj, ((ProgramContext)_localctx).blocks.obj.get(0).lineNo);
 
-			    
+
 			}
 		}
 		catch (RecognitionException re) {
@@ -211,7 +211,7 @@ public class Cool_parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_programBlocks; }
-	 
+
 		public ProgramBlocksContext() { }
 		public void copyFrom(ProgramBlocksContext ctx) {
 			super.copyFrom(ctx);
@@ -269,7 +269,7 @@ public class Cool_parser extends Parser {
 
 				((ProgramBlocksContext)_localctx).obj =  new ArrayList<AST.Block>();
 				_localctx.obj.add(new AST.Block("", "", new ArrayList<AST.Feature>(), 1));
-			
+
 		int _la;
 		try {
 			setState(38);
@@ -279,7 +279,7 @@ public class Cool_parser extends Parser {
 				_localctx = new ClassesContext(_localctx);
 				enterOuterAlt(_localctx, 1);
 				{
-				setState(33); 
+				setState(33);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				do {
@@ -292,7 +292,7 @@ public class Cool_parser extends Parser {
 					match(SEMICOLUN);
 					}
 					}
-					setState(35); 
+					setState(35);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				} while ( _la==CLASS );
@@ -379,7 +379,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_CURLY);
 
 				        ((ClassDefineContext)_localctx).obj =  new AST.Block(((ClassDefineContext)_localctx).type.getText(), "No_inherits", ((ClassDefineContext)_localctx).fl.obj, ((ClassDefineContext)_localctx).def.getLine());
-				    
+
 				}
 				break;
 			case 2:
@@ -401,7 +401,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_CURLY);
 
 				        ((ClassDefineContext)_localctx).obj =  new AST.Block(((ClassDefineContext)_localctx).type.getText(), ((ClassDefineContext)_localctx).itype.getText(), ((ClassDefineContext)_localctx).fl.obj, ((ClassDefineContext)_localctx).def.getLine());
-				    
+
 				}
 				break;
 			}
@@ -454,7 +454,7 @@ public class Cool_parser extends Parser {
 		enterRule(_localctx, 6, RULE_featureList);
 
 		        ((FeatureListContext)_localctx).obj =  new ArrayList<AST.Feature>();
-		    
+
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
@@ -532,7 +532,7 @@ public class Cool_parser extends Parser {
 				((FeatureContext)_localctx).m = method();
 
 				        ((FeatureContext)_localctx).obj =  ((FeatureContext)_localctx).m.obj;
-				    
+
 				}
 				break;
 			case 2:
@@ -542,7 +542,7 @@ public class Cool_parser extends Parser {
 				((FeatureContext)_localctx).p = property();
 
 				        ((FeatureContext)_localctx).obj =  ((FeatureContext)_localctx).p.obj;
-				    
+
 				}
 				break;
 			}
@@ -624,7 +624,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_CURLY);
 
 				        ((MethodContext)_localctx).obj =  new AST.Method(((MethodContext)_localctx).id.getText(), ((MethodContext)_localctx).type.getText(), new ArrayList<AST.Formal>(), ((MethodContext)_localctx).e.obj, ((MethodContext)_localctx).id.getLine());
-				    
+
 				}
 				break;
 			case 2:
@@ -650,7 +650,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_CURLY);
 
 				        ((MethodContext)_localctx).obj =  new AST.Method(((MethodContext)_localctx).id.getText(), ((MethodContext)_localctx).type.getText(), ((MethodContext)_localctx).fl.obj, ((MethodContext)_localctx).e.obj, ((MethodContext)_localctx).id.getLine());
-				    
+
 				}
 				break;
 			}
@@ -729,7 +729,7 @@ public class Cool_parser extends Parser {
 			        ((PropertyContext)_localctx).obj =  new AST.Property(((PropertyContext)_localctx).id.getText(), ((PropertyContext)_localctx).type.getText(), ((PropertyContext)_localctx).id.getLine(), ((PropertyContext)_localctx).e.obj);
 			      else
 			        ((PropertyContext)_localctx).obj =  new AST.Property(((PropertyContext)_localctx).id.getText(), ((PropertyContext)_localctx).type.getText(), ((PropertyContext)_localctx).id.getLine());
-			    
+
 			}
 		}
 		catch (RecognitionException re) {
@@ -781,7 +781,7 @@ public class Cool_parser extends Parser {
 		enterRule(_localctx, 14, RULE_formalList);
 
 		        ((FormalListContext)_localctx).obj =  new ArrayList<AST.Formal>();
-		    
+
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
@@ -859,7 +859,7 @@ public class Cool_parser extends Parser {
 			((FormalContext)_localctx).type = match(TYPE);
 
 			        ((FormalContext)_localctx).obj =  new AST.Formal(((FormalContext)_localctx).id.getText(), ((FormalContext)_localctx).type.getText());
-			    
+
 			}
 		}
 		catch (RecognitionException re) {
@@ -915,12 +915,12 @@ public class Cool_parser extends Parser {
 		enterRule(_localctx, 18, RULE_branch_list);
 
 				((Branch_listContext)_localctx).obj =  new ArrayList<AST.branch>();
-			
+
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(130); 
+			setState(130);
 			_errHandler.sync(this);
 			_la = _input.LA(1);
 			do {
@@ -933,7 +933,7 @@ public class Cool_parser extends Parser {
 				_localctx.obj.add(((Branch_listContext)_localctx).b.obj);
 				}
 				}
-				setState(132); 
+				setState(132);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 			} while ( _la==ID );
@@ -1005,7 +1005,7 @@ public class Cool_parser extends Parser {
 			((Branch_entityContext)_localctx).ex = expr(0);
 
 						((Branch_entityContext)_localctx).obj =  new AST.branch(((Branch_entityContext)_localctx).id.getText(), ((Branch_entityContext)_localctx).type.getText(),((Branch_entityContext)_localctx).ex.obj, ((Branch_entityContext)_localctx).id.getLine());
-					
+
 			}
 		}
 		catch (RecognitionException re) {
@@ -1056,7 +1056,7 @@ public class Cool_parser extends Parser {
 		enterRule(_localctx, 22, RULE_e_list);
 
 				((E_listContext)_localctx).obj =  new ArrayList<AST.Expression>();
-			
+
 		int _la;
 		try {
 			enterOuterAlt(_localctx, 1);
@@ -1108,7 +1108,7 @@ public class Cool_parser extends Parser {
 			super(parent, invokingState);
 		}
 		@Override public int getRuleIndex() { return RULE_expr; }
-	 
+
 		public ExprContext() { }
 		public void copyFrom(ExprContext ctx) {
 			super.copyFrom(ctx);
@@ -1812,7 +1812,7 @@ public class Cool_parser extends Parser {
 				((AssignmentContext)_localctx).expr1 = expr(26);
 
 				        ((AssignmentContext)_localctx).obj =  new AST.Assignment(((AssignmentContext)_localctx).id.getText(), ((AssignmentContext)_localctx).expr1.obj);
-				    
+
 				}
 				break;
 			case 2:
@@ -1830,7 +1830,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_PRANSIS);
 
 				        ((Own_dispatch_callContext)_localctx).obj =  new AST.dispatch(new AST.no_expr(((Own_dispatch_callContext)_localctx).id.getLine()), ((Own_dispatch_callContext)_localctx).id.getText(), ((Own_dispatch_callContext)_localctx).e.obj, ((Own_dispatch_callContext)_localctx).id.getLine());
-				    
+
 				}
 				break;
 			case 3:
@@ -1854,7 +1854,7 @@ public class Cool_parser extends Parser {
 				match(FI);
 
 				        ((IfContext)_localctx).obj =  new AST.If(((IfContext)_localctx).expr1.obj, ((IfContext)_localctx).expr2.obj, ((IfContext)_localctx).expr3.obj);
-				    
+
 				}
 				break;
 			case 4:
@@ -1874,7 +1874,7 @@ public class Cool_parser extends Parser {
 				match(POOL);
 
 				        ((WhileContext)_localctx).obj =  new AST.While(((WhileContext)_localctx).expr1.obj, ((WhileContext)_localctx).expr2.obj);
-				    
+
 				}
 				break;
 			case 5:
@@ -1884,8 +1884,8 @@ public class Cool_parser extends Parser {
 				_prevctx = _localctx;
 				setState(182);
 				match(OPEN_CURLY);
-				 ArrayList<AST.Expression> list = new ArrayList<AST.Expression>(); 
-				setState(188); 
+				 ArrayList<AST.Expression> list = new ArrayList<AST.Expression>();
+				setState(188);
 				_errHandler.sync(this);
 				_la = _input.LA(1);
 				do {
@@ -1898,7 +1898,7 @@ public class Cool_parser extends Parser {
 					list.add(((BlockContext)_localctx).exp.obj);
 					}
 					}
-					setState(190); 
+					setState(190);
 					_errHandler.sync(this);
 					_la = _input.LA(1);
 				} while ( (((_la) & ~0x3f) == 0 && ((1L << _la) & ((1L << NEW) | (1L << IF) | (1L << CASE) | (1L << WHILE) | (1L << LET) | (1L << INTEGER) | (1L << LITERAL) | (1L << ID) | (1L << INTEGER_NEGATIVE) | (1L << OPEN_CURLY) | (1L << OPENP_PRANSIS) | (1L << ISVOID) | (1L << NOT) | (1L << TRUE) | (1L << FALSE))) != 0) );
@@ -1906,7 +1906,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_CURLY);
 
 				        ((BlockContext)_localctx).obj =  new AST.BlockOfExpressions(list);
-				    
+
 				}
 				break;
 			case 6:
@@ -1920,7 +1920,7 @@ public class Cool_parser extends Parser {
 				            ArrayList<Boolean> flags = new ArrayList<>();
 				            Boolean flag;
 				            AST.Expression ex;
-				        
+
 				setState(196);
 				match(LET);
 				setState(197);
@@ -1985,7 +1985,7 @@ public class Cool_parser extends Parser {
 				((LetInContext)_localctx).e2 = expr(19);
 
 				            ((LetInContext)_localctx).obj =  new AST.Let(flags, ids, exprs, ((LetInContext)_localctx).e2.obj);
-				        
+
 				}
 				break;
 			case 7:
@@ -2005,7 +2005,7 @@ public class Cool_parser extends Parser {
 				match(ESAC);
 
 				        ((CaseContext)_localctx).obj =  new AST.Case(((CaseContext)_localctx).expr1.obj, ((CaseContext)_localctx).bl.obj, ((CaseContext)_localctx).expr1.obj.lineNo);
-				    
+
 				}
 				break;
 			case 8:
@@ -2019,7 +2019,7 @@ public class Cool_parser extends Parser {
 				((NewContext)_localctx).type = match(TYPE);
 
 				        ((NewContext)_localctx).obj =  new AST.NewType(((NewContext)_localctx).type.getText());
-				    
+
 				}
 				break;
 			case 9:
@@ -2033,7 +2033,7 @@ public class Cool_parser extends Parser {
 				((IsvoidContext)_localctx).e = expr(16);
 
 				        ((IsvoidContext)_localctx).obj =  new AST.IsVoid(((IsvoidContext)_localctx).e.obj);
-				    
+
 				}
 				break;
 			case 10:
@@ -2050,7 +2050,7 @@ public class Cool_parser extends Parser {
 				                        ((NegativeContext)_localctx).expr2.obj,
 				                        ((NegativeContext)_localctx).expr2.obj,
 				                        ((NegativeContext)_localctx).op.getText());
-				    
+
 				}
 				break;
 			case 11:
@@ -2064,7 +2064,7 @@ public class Cool_parser extends Parser {
 				((BoolNotContext)_localctx).expr2 = expr(7);
 
 				        ((BoolNotContext)_localctx).obj =  new AST.LogOp(((BoolNotContext)_localctx).expr2.obj, ((BoolNotContext)_localctx).op.getText());
-				    
+
 				}
 				break;
 			case 12:
@@ -2080,7 +2080,7 @@ public class Cool_parser extends Parser {
 				match(CLOSE_PRANSIS);
 
 				        ((ParenthesesContext)_localctx).obj =  new AST.Parentheses(((ParenthesesContext)_localctx).expr1.obj);
-				    
+
 				}
 				break;
 			case 13:
@@ -2092,7 +2092,7 @@ public class Cool_parser extends Parser {
 				((IdContext)_localctx).id = match(ID);
 
 				        ((IdContext)_localctx).obj =  new AST.Id(((IdContext)_localctx).id.getText());
-				    
+
 				}
 				break;
 			case 14:
@@ -2104,7 +2104,7 @@ public class Cool_parser extends Parser {
 				((IntContext)_localctx).value = match(INTEGER);
 
 				        ((IntContext)_localctx).obj =  new AST.IntConst(Integer.parseInt(((IntContext)_localctx).value.getText()));
-				    
+
 				}
 				break;
 			case 15:
@@ -2116,7 +2116,7 @@ public class Cool_parser extends Parser {
 				((StringContext)_localctx).value = match(LITERAL);
 
 				        ((StringContext)_localctx).obj =  new AST.Literal(((StringContext)_localctx).value.getText());
-				    
+
 				}
 				break;
 			case 16:
@@ -2128,7 +2128,7 @@ public class Cool_parser extends Parser {
 				((TrueContext)_localctx).bool = match(TRUE);
 
 				        ((TrueContext)_localctx).obj =  new AST.Bool(((TrueContext)_localctx).bool.getText().toUpperCase());
-				    
+
 				}
 				break;
 			case 17:
@@ -2140,7 +2140,7 @@ public class Cool_parser extends Parser {
 				((FalseContext)_localctx).bool = match(FALSE);
 
 				        ((FalseContext)_localctx).obj =  new AST.Bool(((FalseContext)_localctx).bool.getText().toUpperCase());
-				    
+
 				}
 				break;
 			}
@@ -2172,7 +2172,7 @@ public class Cool_parser extends Parser {
 						                                  ((PlusContext)_localctx).expr1.obj,
 						                                  ((PlusContext)_localctx).expr2.obj,
 						                                  ((PlusContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 2:
@@ -2191,7 +2191,7 @@ public class Cool_parser extends Parser {
 						                           ((MinusContext)_localctx).expr1.obj,
 						                           ((MinusContext)_localctx).expr2.obj,
 						                          ((MinusContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 3:
@@ -2210,7 +2210,7 @@ public class Cool_parser extends Parser {
 						                                  ((MultiplicationContext)_localctx).expr1.obj,
 						                                  ((MultiplicationContext)_localctx).expr2.obj,
 						                                  ((MultiplicationContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 4:
@@ -2229,7 +2229,7 @@ public class Cool_parser extends Parser {
 						                                  ((DivisionContext)_localctx).expr1.obj,
 						                                  ((DivisionContext)_localctx).expr2.obj,
 						                                  ((DivisionContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 5:
@@ -2245,7 +2245,7 @@ public class Cool_parser extends Parser {
 						((SmallerThanContext)_localctx).expr2 = expr(11);
 
 						                  ((SmallerThanContext)_localctx).obj =  new AST.Relational(((SmallerThanContext)_localctx).expr1.obj, ((SmallerThanContext)_localctx).expr2.obj, ((SmallerThanContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 6:
@@ -2261,7 +2261,7 @@ public class Cool_parser extends Parser {
 						((LessOREqualContext)_localctx).expr2 = expr(10);
 
 						                  ((LessOREqualContext)_localctx).obj =  new AST.Relational(((LessOREqualContext)_localctx).expr1.obj, ((LessOREqualContext)_localctx).expr2.obj, ((LessOREqualContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 7:
@@ -2277,7 +2277,7 @@ public class Cool_parser extends Parser {
 						((EqualContext)_localctx).expr2 = expr(9);
 
 						                  ((EqualContext)_localctx).obj =  new AST.Relational(((EqualContext)_localctx).expr1.obj, ((EqualContext)_localctx).expr2.obj, ((EqualContext)_localctx).op.getText());
-						              
+
 						}
 						break;
 					case 8:
@@ -2299,7 +2299,7 @@ public class Cool_parser extends Parser {
 						match(CLOSE_PRANSIS);
 
 						                  ((DispatchContext)_localctx).obj =  new AST.dispatch(((DispatchContext)_localctx).expr1.obj, ((DispatchContext)_localctx).id.getText(), ((DispatchContext)_localctx).e.obj, ((DispatchContext)_localctx).id.getLine());
-						              
+
 						}
 						break;
 					case 9:
@@ -2325,11 +2325,11 @@ public class Cool_parser extends Parser {
 						match(CLOSE_PRANSIS);
 
 						                  ((Static_dispatchContext)_localctx).obj =  new AST.static_dispatch(((Static_dispatchContext)_localctx).expr1.obj, ((Static_dispatchContext)_localctx).type.getText(), ((Static_dispatchContext)_localctx).id.getText(), ((Static_dispatchContext)_localctx).e.obj, ((Static_dispatchContext)_localctx).expr1.obj.lineNo);
-						              
+
 						}
 						break;
 					}
-					} 
+					}
 				}
 				setState(325);
 				_errHandler.sync(this);

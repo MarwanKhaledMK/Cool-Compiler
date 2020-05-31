@@ -1,4 +1,4 @@
-// Generated from E:/Computer Engineering & Communications/4 - Computer Engineering Fourth Year/2nd Term/Compilers/ParserProject/src\Cool_parser.g4 by ANTLR 4.8
+// Generated from E:/Computer Engineering & Communications/4 - Computer Engineering Fourth Year/2nd Term/Compilers/ParserProject/src\Cool_parser.g4.g4 by ANTLR 4.8
 
 
 	import java.util.*;
